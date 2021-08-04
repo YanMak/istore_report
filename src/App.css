@@ -13,6 +13,58 @@
   }
 }
 
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: gray;
+  position: fixed;
+  z-index: 50;
+  display: flex;
+}
+
+main {
+  padding: 50px;
+}
+
+p {
+  margin: 20px;
+}
+
+.burger-btn {
+  width: 20px;
+  height: 20px;
+  margin: left;
+  position: relative;
+  /*background-color: black;*/
+  cursor: pointer;
+}
+
+.burger-btn:before {
+  content: '';
+  top: 0;
+  width: 20px;
+  background-color: black;
+  height: 3px;
+  position: absolute;
+}
+
+.burger-btn span {
+  top: 9px;
+  width: 20px;
+  background-color: black;
+  height: 3px;
+  position: absolute;
+}
+
+.burger-btn:after {
+  content: '';
+  bottom: 0;
+  width: 20px;
+  background-color: black;
+  height: 3px;
+  position: absolute;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -40,6 +92,12 @@
 .soflex1
 {
     flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+.soflex2 > div
+{
     display: flex;
     justify-content: space-between;
 }
